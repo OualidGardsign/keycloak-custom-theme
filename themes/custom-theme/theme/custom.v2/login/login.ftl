@@ -9,15 +9,15 @@
                 <form id="kc-form-login" class="${properties.kcFormClass!} onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
                     <#if !usernameHidden??>
                         <div class="${properties.kcFormGroupClass!}">
-                            <!-- <label for="username" class="${properties.kcLabelClass!}">
+                             <label for="username" class="${properties.kcLabelClass!}">
                                 <span class="pf-v5-c-form__label-text">
                                     <#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if>
                                 </span>
-                            </label> -->
+                            </label> 
 
                             <span class="${properties.kcInputClass!} ${messagesPerField.existsError('username','password')?then('pf-m-error', '')}">
                                 <input tabindex="1" id="username" 
-                                      placeholder='<#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if>'
+                                      placeholder='Vul hier uw gegevens in...'
                                       name="username" value="${(login.username!'')}" type="text" autofocus autocomplete="off"
                                        aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                                 />
@@ -40,13 +40,13 @@
                     </#if>
 
                     <div class="${properties.kcFormGroupClass!}">
-                        <!-- <label for="password" class="${properties.kcLabelClass!}">
+                        <label for="password" class="${properties.kcLabelClass!}">
                             <span class="pf-v5-c-form__label-text">${msg("password")}</span>
-                        </label> -->
+                        </label>
 
                         <div class="${properties.kcInputGroup!}">
                             <span class="${properties.kcInputClass!}">
-                                <input tabindex="2" id="password" placeholder="${msg('password')}" name="password" type="password" autocomplete="off"
+                                <input tabindex="2" id="password" placeholder='Vul hier uw gegevens in...' name="password" type="password" autocomplete="off"
                                        aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                                 />
                             </span>

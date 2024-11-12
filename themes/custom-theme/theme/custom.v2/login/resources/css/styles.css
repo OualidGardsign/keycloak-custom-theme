@@ -9,6 +9,19 @@
   grid-template-columns: 34rem;
 }
 
+.pf-v5-c-login__main {
+  border-radius: 1%;
+  box-shadow:
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+.pf-v5-c-form-control {
+  border-radius: 1%;
+}
+
 #kc-header-wrapper {
   padding: 62px 10px 20px;
   position: absolute;
@@ -19,7 +32,6 @@
 .login-pf body {
   background: #e1e1e1;
   background-size: cover;
-  height: 100%;
 }
 
 div.kc-logo-text {
@@ -29,6 +41,40 @@ div.kc-logo-text {
   margin: 0 auto;
 }
 
-div.kc-logo-text span {
-  display: none;
+.header-bg {
+  background: #ffffff;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex; /* Enables flexbox layout */
+  flex-direction: row; /* Arranges items vertically */
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.header-bg a {  /* Targets all <a> tags within elements with the class "header-bg" */
+  color: green;  /* Sets the text color to green */
+  font-size: 18px;  /* Sets the font size to 12 pixels */
+}
+
+.header-stack {
+  text-align: end;
+  flex-grow: 1; 
+}
+
+.header-line {
+  background: #204839;
+  height: 1px;
+}
+
+.banner {
+  background: #204839;
+}
+
+.img_banner {
+  filter: brightness(0) invert(1);
+  margin-left: auto;
+  margin-right: auto;
+  height: 25px;
+  display: block; /* Add this line */
 }

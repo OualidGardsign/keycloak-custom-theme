@@ -1,15 +1,15 @@
 :root {
-  --pf-v5-global--primary-color--100:#30302e;
-  --pf-v5-global--primary-color--200:#242424;
+  --pf-v5-global--primary-color--100:#3a9573;
+  --pf-v5-global--primary-color--200:#59a78b;
 
   --pf-c-form__label-text--FontWeight: 400;
   --pf-c-form__label--FontSize: 14px;
-  --pf-global--link--Color: rgb(17, 37, 56);
-  --pf-global--link--Color--hover: #556a7e;
+  --pf-global--link--Color: #3a9573;
+  --pf-global--link--Color--hover: #59a78b;
 
   --pf-v5-c-title--m-3xl--FontWeight: var(--pf-v5-global--FontWeight--bold) !important;
-  --pf-v5-global--FontFamily--heading: "Space Grotesk", Helvetica, Arial, sans-serif;
-  --pf-v5-global--FontFamily--text:"Space Grotesk", Helvetica, Arial, sans-serif;
+  --pf-v5-global--FontFamily--heading: "Roboto", Helvetica, Arial, sans-serif;
+  --pf-v5-global--FontFamily--text:"Roboto", Helvetica, Arial, sans-serif;
 }
 
 ::placeholder {
@@ -47,13 +47,14 @@
   /* display: flex; */
   align-items: center;
   justify-content: center;
-  background: white;
+  background: #f2f2f2;
   min-height: 100vh;
 }
 
 .login-pf-page .card-pf {
   margin-top: 10rem;
   box-shadow: none;
+  border-radius: 25%;
 }
 
 
@@ -81,3 +82,4 @@
 .login-pf-page .card-pf {
   background-color: #fff;
 }
+

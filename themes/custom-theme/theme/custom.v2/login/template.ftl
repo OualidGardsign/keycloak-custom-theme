@@ -56,8 +56,31 @@
 
 <body id="keycloak-bg" class="${properties.kcBodyClass!}">
 <div id="kc-header" class="${properties.kcHeaderClass!}">
-    <div id="kc-header-wrapper"
+    <#--  <div id="kc-header-wrapper"
              class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
+    </div>  -->
+    <div class="header-bg">
+      <a href="https://www.yourgrow.net">
+        logo
+      </a>
+      <div class="header-stack">
+        <#--  Login  -->
+        <a>
+          | Login
+        </a>
+        <#--  Line  -->
+        <div class="header-line">
+        
+        </div>
+        <#--  Sections  -->
+        <div>
+          <a>Tools</a>
+          <a>| Academy</a>
+          <a>| Coaching</a>
+          <a>| Blog</a>
+          <a>| Contact</a>
+        </div>
+      </div>
     </div>
 </div>
 <div class="pf-v5-c-login"
@@ -209,6 +232,10 @@
     </main>
   </div>
 </div>
+<div class="banner">
+  <img class="img_banner" src="${url.resourcesPath}/${properties.logoBanner}" alt="Logo Banner" />
+</div>
+
 <script type="module">
     import Alpine from "alpinejs";
 
